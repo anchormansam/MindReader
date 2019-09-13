@@ -77,15 +77,15 @@ function renderState(){
                 document.getElementById('reset').style.visibility = "visible";
             break;
             case 'page2':
-                text = "Add your 2 numbers together. <span>(ex 24; 2+4=6)</span>";
+                text = "Add your 2 numbers together. <span><br>(ex 24; 2+4=6)</span>";
                 
             break;
             case 'page3':
-                text = "Subtract new number from old number. (ex 24-6=18)"
+                text = "Subtract new number from old number. <span><br>(ex 24-6=18)</span>"
             break;
             case 'page4':
                 console.log(obj)
-                text = "Find your number and remember symbol.";
+                text = "Find your number and remember symbol.<span><br>Scroll Down</span>";
                 document.getElementById('options').style.visibility = "visible"
                 document.getElementById('options').innerHTML = insertNumbers.join('<br>');
                 document.getElementById('options').style.display = "block";
