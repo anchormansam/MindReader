@@ -43,6 +43,7 @@ function nextButtonClickHandler(e){
 }
 
 function resetButtonClickHandler(e){
+    location.reload();
     currentState = 0;
     renderState();
 }
@@ -102,7 +103,7 @@ function renderState(){
                     document.getElementById('result').style.visibility = "visible";
                     document.getElementById('result').innerHTML = selectedSymbol;
                     document.getElementById('options').style.visibility = "hidden";
-                    document.getElementById('options').innerHTML = insertNumbers.join('<br>');
+                    document.getElementById('options').innerHTML = insertNumbers.join();
                     document.getElementById('options').style.display = "none";
                     
                     break;
